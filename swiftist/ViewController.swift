@@ -74,6 +74,81 @@ class ViewController: UIViewController {
     }
     
     func tryControlFlow() {
+        let individualScores = [75, 43, 103, 87, 12]
+        var teamScore = 0
+        for score in individualScores {
+            if score > 50 {
+                teamScore += 3
+            } else {
+                teamScore += 1
+            }
+        }
+        println("teamScore:" + String(teamScore))
+        
+        var optionalString: String? = "Hello"
+        
+        println(optionalString == nil)
+        
+        var optionalName: String? = "John Appleseed"
+        var greeting = "Hello!"
+        if let name = optionalName {
+            greeting = "Hello, \(name)"
+        }
+        println("greeting:" + greeting)
+        
+        let vegetable = "red pepper"
+        var vegetableComment = ""
+        switch vegetable {
+        case "celery":
+            vegetableComment = "Add some raisins and make ants on a log."
+        case "cucumber", "watercress":
+            vegetableComment = "That would make a good tea sandwich."
+        case let x where x.hasSuffix("pepper"):
+            vegetableComment = "Is it a spicy \(x)?"
+        default:
+            vegetableComment = "Everything tastes good in soup."
+        }
+        println("vegetableComment:" + vegetableComment)
+        
+        let interestingNumbers = [
+            "Prime": [2, 3, 5, 7, 11, 13],
+            "Fibonacci": [1, 1, 2, 3, 5, 8],
+            "Square": [1, 4, 9, 16, 25],
+            "Mountain": [99, 2, 34],
+        ]
+        var largest = 0
+        for (kind, numbers) in interestingNumbers {
+            for number in numbers {
+                if number > largest {
+                    largest = number
+                }
+            }
+        }
+        println("largest number is :" + String(largest))
+        
+        var n = 2
+        while n < 100 {
+            n = n * 2
+        }
+        println("n :" + String(n))
+        
+        var m = 2
+        do {
+            m = m * 2
+        } while m < 100
+        println("m :" + String(m))
+        
+        var firstForLoop = 0
+        for i in 0..<4 {
+            firstForLoop += i
+        }
+        println("firstForLoop :" + String(firstForLoop))
+        
+        var secondForLoop = 0
+        for var i = 0; i < 4; ++i {
+            secondForLoop += i
+        }
+        println("secondForLoop :" + String(secondForLoop))
     }
     
     func loadAddressURL() {
