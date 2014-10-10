@@ -16,29 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bg1-Wn-Aeg">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mM3-7R-dlt">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="817" height="800"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="400" height="800"/>
                                 </variation>
                                 <connections>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="CZs-vb-Pkv"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="DS2-Dd-DeW"/>
                                 </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mM3-7R-dlt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mM3-7R-dlt"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="Bg1-Wn-Aeg" id="1xe-SA-neA"/>
+                        <outlet property="webView" destination="mM3-7R-dlt" id="7ZZ-Ou-AB0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.75" y="135.75"/>
+            <point key="canvasLocation" x="138" y="135.75"/>
         </scene>
     </scenes>
 </document>
