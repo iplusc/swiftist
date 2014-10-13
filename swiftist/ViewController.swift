@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var webView: UIWebView!
     
     var targetURL = "http://google.com"
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         
         trySampleValues()
         tryControlFlow()
+        tryFunctionsRClosures()
     }
     
     func trySampleValues() {
@@ -149,6 +150,67 @@ class ViewController: UIViewController {
             secondForLoop += i
         }
         println("secondForLoop :" + String(secondForLoop))
+    }
+    
+    func tryFunctionsRClosures() {
+        func greet(name: String, day: String) -> String {
+            return "Hello \(name), today is \(day)."
+        }
+        println("green function output: " + greet("Bob", "Tuesday"))
+        
+        func getGasPrices() -> (Double, Double, Double) {
+            return (3.59, 3.69, 3.79)
+        }
+        println(getGasPrices())
+        
+        func sumOf(numbers: Int...) -> Int {
+            var sum = 0
+            for number in numbers {
+                sum += number
+            }
+            return sum
+        }
+        println(sumOf())
+        println(sumOf(42, 597, 12))
+        
+        func returnFifteen() -> Int {
+            var y = 10
+            func add() {
+                y += 5
+            }
+            add()
+            return y
+        }
+        println(returnFifteen())
+        
+        func makeIncrementer() -> (Int -> Int) {
+            func addOne(number: Int) -> Int {
+                return 1 + number
+            }
+            return addOne
+        }
+        var increment = makeIncrementer()
+        println(increment(7))
+        
+        func hasAnyMatches(list: [Int], condition: Int -> Bool) -> Bool {
+            for item in list {
+                if condition(item) {
+                    return true
+                }
+            }
+            return false
+        }
+        func lessThanTen(number: Int) -> Bool {
+            return number < 10
+        }
+        var numbers = [20, 19, 7, 12]
+        println(hasAnyMatches(numbers, lessThanTen))
+        
+        println(numbers.map({
+            (number: Int) -> Int in
+            let result = 3 * number
+            return result
+        }))
     }
     
     func loadAddressURL() {
