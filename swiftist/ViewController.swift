@@ -45,6 +45,8 @@ class ViewController: UIViewController {
         doBasicOperators()
         //2.3
         doStringRCharacters()
+        //2.4
+        doCollectionTypes()
     }
     
     func trySampleValues() {
