@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         tryObjectsRClasses()
         tryEnumerationsRStructures()
         tryProtocolsRExtensions()
+        tryGenerics()
     }
     
     func trySampleValues() {
@@ -420,6 +421,38 @@ class ViewController: UIViewController {
         println("SimpleStructure.simpleDescription + \(bDescription)")
         
         println("7.simpleDescription + \(7.simpleDescription)")
+    }
+    
+    func tryGenerics() {
+        func repeat<ItemType>(item: ItemType, times: Int) -> [ItemType] {
+            var result = [ItemType]()
+            for i in 0..<times {
+                result.append(item)
+            }
+            return result
+        }
+        println(repeat("knock", 4))
+        // Reimplement the Swift standard library's optional type
+        enum OptionalValue<T> {
+            case None
+            case Some(T)
+        }
+        var possibleInteger: OptionalValue<Int> = .None
+        possibleInteger = .Some(100)
+        println("possibleInteger: \(possibleInteger)")
+        
+        func anyCommonElements <T, U where T: SequenceType, U: SequenceType, T.Generator.Element: Equatable, T.Generator.Element == U.Generator.Element> (lhs: T, rhs: U) -> Bool {
+            for lhsItem in lhs {
+                for rhsItem in rhs {
+                    if lhsItem == rhsItem {
+                        return true
+                    }
+                }
+            }
+            return false
+        }
+        println(anyCommonElements([1, 2, 3], [3]))
+        
     }
     
     func loadAddressURL() {
