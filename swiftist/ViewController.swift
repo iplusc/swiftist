@@ -43,6 +43,8 @@ class ViewController: UIViewController {
         doBasics()
         //2.2
         doBasicOperators()
+        //2.3
+        doStringRCharacters()
     }
     
     func trySampleValues() {
