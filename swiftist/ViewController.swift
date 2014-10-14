@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         tryFunctionsRClosures()
         tryObjectsRClasses()
         tryEnumerationsRStructures()
+        tryProtocolsRExtensions()
     }
     
     func trySampleValues() {
@@ -405,6 +406,20 @@ class ViewController: UIViewController {
             let serverResponse = "Failure...  \(error)"
             println("serverResponse + \(serverResponse)")
         }
+    }
+    
+    func tryProtocolsRExtensions() {
+        var a = SimpleClass()
+        a.adjust()
+        let aDescription = a.simpleDescription
+        println("SimpleClass.simpleDescription + \(aDescription)")
+        
+        var b = SimpleStructure()
+        b.adjust()
+        let bDescription = b.simpleDescription
+        println("SimpleStructure.simpleDescription + \(bDescription)")
+        
+        println("7.simpleDescription + \(7.simpleDescription)")
     }
     
     func loadAddressURL() {

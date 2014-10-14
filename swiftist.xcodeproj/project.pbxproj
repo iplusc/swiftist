@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC6EF6C019ECC76D005ADFDF /* TExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EF6BF19ECC76D005ADFDF /* TExampleProtocol.swift */; };
 		BCF2D41619E6712200C38737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D41519E6712200C38737 /* AppDelegate.swift */; };
 		BCF2D41919E6712200C38737 /* swiftist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D41719E6712200C38737 /* swiftist.xcdatamodeld */; };
 		BCF2D41B19E6712200C38737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D41A19E6712200C38737 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC6EF6BF19ECC76D005ADFDF /* TExampleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TExampleProtocol.swift; sourceTree = "<group>"; };
 		BCF2D41019E6712200C38737 /* swiftist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF2D41419E6712200C38737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCF2D41519E6712200C38737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				BCF2D41519E6712200C38737 /* AppDelegate.swift */,
 				BCF2D41A19E6712200C38737 /* ViewController.swift */,
+				BC6EF6BF19ECC76D005ADFDF /* TExampleProtocol.swift */,
 				BCF2D41C19E6712200C38737 /* Main.storyboard */,
 				BCF2D41F19E6712200C38737 /* Images.xcassets */,
 				BCF2D42119E6712200C38737 /* LaunchScreen.xib */,
@@ -218,6 +221,7 @@
 				BCF2D41B19E6712200C38737 /* ViewController.swift in Sources */,
 				BCF2D41919E6712200C38737 /* swiftist.xcdatamodeld in Sources */,
 				BCF2D41619E6712200C38737 /* AppDelegate.swift in Sources */,
+				BC6EF6C019ECC76D005ADFDF /* TExampleProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				BCF2D43419E6712200C38737 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCF2D43519E6712200C38737 /* Build configuration list for PBXNativeTarget "swiftistTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				BCF2D43719E6712200C38737 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
