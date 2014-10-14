@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         tryControlFlow()
         tryFunctionsRClosures()
         tryObjectsRClasses()
+        tryEnumerationsRStructures()
     }
     
     func trySampleValues() {
@@ -321,7 +322,89 @@ class ViewController: UIViewController {
         
         let optionalSquare: Square? = Square(sideLength: 2.5, name: "optional square")
         let sideLength = optionalSquare?.sideLength
-         println("optionalSquare?.sideLength: + \(sideLength)")
+        println("optionalSquare?.sideLength: + \(sideLength)")
+    }
+    
+    func tryEnumerationsRStructures() {
+        enum Rank: Int {
+            case Ace = 1
+            case Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten
+            case Jack, Queen, King
+            func simpleDescription() -> String {
+                switch self {
+                case .Ace:
+                    return "ace"
+                case .Jack:
+                    return "jack"
+                case .Queen:
+                    return "queen"
+                case .King:
+                    return "king"
+                default:
+                    return String(self.toRaw())
+                }
+            }
+        }
+        let ace = Rank.Ace
+        println("ace: \(ace)")
+        let aceRawValue = ace.toRaw()
+        println("ace.toRaw: \(aceRawValue)")
+        
+        if let convertedRank = Rank.fromRaw(3) {
+            let threeDescription = convertedRank.simpleDescription()
+            println("threeDescription: \(threeDescription)")
+        }
+        
+        enum Suit {
+            case Spades, Hearts, Diamonds, Clubs
+            func simpleDescription() -> String {
+                switch self {
+                case .Spades:
+                    return "spades"
+                case .Hearts:
+                    return "hearts"
+                case .Diamonds:
+                    return "diamonds"
+                case .Clubs:
+                    return "clubs"
+                }
+            }
+            
+        }
+        let hearts = Suit.Hearts
+        let heartsDescription = hearts.simpleDescription()
+        println("hearts: \(hearts)")
+        println("heartsDescription: \(heartsDescription)")
+        
+        struct Card {
+            var rank: Rank
+            var suit: Suit
+            func simpleDescription() -> String {
+                return "The \(rank.simpleDescription()) of \(suit.simpleDescription())"
+            }
+        }
+        let threeOfSpades = Card(rank: .Three, suit: .Spades)
+        let threeOfSpadesDescription = threeOfSpades.simpleDescription()
+        println("threeOfSpades: \(threeOfSpades)")
+        println("threeOfSpadesDescription: \(threeOfSpadesDescription)")
+        
+        enum ServerResponse {
+            case Result(String, String)
+            case Error(String)
+        }
+        
+        let success = ServerResponse.Result("6:00 am", "8:09 pm")
+        let failure = ServerResponse.Error("Out of cheese.")
+        println("success: \(success)")
+        println("failure: \(failure)")
+        switch success {
+        case let .Result(sunrise, sunset):
+            let serverResponse = "Sunrise is at \(sunrise) and sunset is at \(sunset)."
+            println("serverResponse + \(serverResponse)")
+        case let .Error(error):
+            let serverResponse = "Failure...  \(error)"
+            println("serverResponse + \(serverResponse)")
+        }
     }
     
     func loadAddressURL() {
