@@ -38,6 +38,9 @@ class ViewController: UIViewController {
         tryEnumerationsRStructures()
         tryProtocolsRExtensions()
         tryGenerics()
+        
+        //2.1
+        doBasics()
     }
     
     func trySampleValues() {
