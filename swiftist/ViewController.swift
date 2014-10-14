@@ -41,6 +41,8 @@ class ViewController: UIViewController {
         
         //2.1
         doBasics()
+        //2.2
+        doBasicOperators()
     }
     
     func trySampleValues() {
