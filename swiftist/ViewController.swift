@@ -39,18 +39,20 @@ class ViewController: UIViewController {
         tryProtocolsRExtensions()
         tryGenerics()
         
-        //2.1
+        // 2.1 The Basics
         doBasics()
-        //2.2
+        // 2.2 Basic Operators
         doBasicOperators()
-        //2.3
+        // 2.3 Strings and Characters
         doStringRCharacters()
-        //2.4
+        // 2.4 Collection Types
         doCollectionTypes()
-        //2.5
+        // 2.5 Control Flow
         doControlFlow()
-        //2.6
+        // 2.6 Functions
         doFounctions()
+        // 2.7 Closures
+        doClosures()
     }
     
     func trySampleValues() {
@@ -412,6 +414,13 @@ class ViewController: UIViewController {
         let failure = ServerResponse.Error("Out of cheese.")
         println("success: \(success)")
         println("failure: \(failure)")
+        
+        switch success {
+        case let .Result(sunrise, sunset):
+            let serverResponse = "Sunrise is at \(sunrise) and sunset is at \(sunset)."
+        case let .Error(error):
+            let serverResponse = "Failure... \(error)"
+        }
     }
     
     func tryProtocolsRExtensions() {

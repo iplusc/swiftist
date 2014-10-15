@@ -21,6 +21,7 @@
 		BCF2D42319E6712200C38737 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF2D42119E6712200C38737 /* LaunchScreen.xib */; };
 		BCF2D42F19E6712200C38737 /* swiftistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D42E19E6712200C38737 /* swiftistTests.swift */; };
 		BCFA837419EE3DB3004E31A7 /* TFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFA837319EE3DB3004E31A7 /* TFunctions.swift */; };
+		BCFA837619EE42BC004E31A7 /* TClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFA837519EE42BC004E31A7 /* TClosures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		BCF2D42D19E6712200C38737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCF2D42E19E6712200C38737 /* swiftistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftistTests.swift; sourceTree = "<group>"; };
 		BCFA837319EE3DB3004E31A7 /* TFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFunctions.swift; sourceTree = "<group>"; };
+		BCFA837519EE42BC004E31A7 /* TClosures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TClosures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				BC6EF6C719ECFCBF005ADFDF /* TCollectionTypes.swift */,
 				BC6EF6C919ED01A5005ADFDF /* TControlFlow.swift */,
 				BCFA837319EE3DB3004E31A7 /* TFunctions.swift */,
+				BCFA837519EE42BC004E31A7 /* TClosures.swift */,
 				BCF2D41C19E6712200C38737 /* Main.storyboard */,
 				BCF2D41F19E6712200C38737 /* Images.xcassets */,
 				BCF2D42119E6712200C38737 /* LaunchScreen.xib */,
@@ -239,6 +242,7 @@
 				BCF2D41B19E6712200C38737 /* ViewController.swift in Sources */,
 				BC6EF6C219ECD0C5005ADFDF /* TTheBasics.swift in Sources */,
 				BCF2D41919E6712200C38737 /* swiftist.xcdatamodeld in Sources */,
+				BCFA837619EE42BC004E31A7 /* TClosures.swift in Sources */,
 				BC6EF6CA19ED01A5005ADFDF /* TControlFlow.swift in Sources */,
 				BC6EF6C419ECE70B005ADFDF /* TBasicOperators.swift in Sources */,
 				BCF2D41619E6712200C38737 /* AppDelegate.swift in Sources */,
