@@ -49,6 +49,8 @@ class ViewController: UIViewController {
         doCollectionTypes()
         //2.5
         doControlFlow()
+        //2.6
+        doFounctions()
     }
     
     func trySampleValues() {
@@ -410,14 +412,6 @@ class ViewController: UIViewController {
         let failure = ServerResponse.Error("Out of cheese.")
         println("success: \(success)")
         println("failure: \(failure)")
-        switch success {
-        case let .Result(sunrise, sunset):
-            let serverResponse = "Sunrise is at \(sunrise) and sunset is at \(sunset)."
-            println("serverResponse + \(serverResponse)")
-        case let .Error(error):
-            let serverResponse = "Failure...  \(error)"
-            println("serverResponse + \(serverResponse)")
-        }
     }
     
     func tryProtocolsRExtensions() {

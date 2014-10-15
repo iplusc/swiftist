@@ -20,6 +20,7 @@
 		BCF2D42019E6712200C38737 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF2D41F19E6712200C38737 /* Images.xcassets */; };
 		BCF2D42319E6712200C38737 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF2D42119E6712200C38737 /* LaunchScreen.xib */; };
 		BCF2D42F19E6712200C38737 /* swiftistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D42E19E6712200C38737 /* swiftistTests.swift */; };
+		BCFA837419EE3DB3004E31A7 /* TFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFA837319EE3DB3004E31A7 /* TFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		BCF2D42819E6712200C38737 /* swiftistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF2D42D19E6712200C38737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCF2D42E19E6712200C38737 /* swiftistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftistTests.swift; sourceTree = "<group>"; };
+		BCFA837319EE3DB3004E31A7 /* TFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				BC6EF6C519ECEEB7005ADFDF /* TStringsRCharacters.swift */,
 				BC6EF6C719ECFCBF005ADFDF /* TCollectionTypes.swift */,
 				BC6EF6C919ED01A5005ADFDF /* TControlFlow.swift */,
+				BCFA837319EE3DB3004E31A7 /* TFunctions.swift */,
 				BCF2D41C19E6712200C38737 /* Main.storyboard */,
 				BCF2D41F19E6712200C38737 /* Images.xcassets */,
 				BCF2D42119E6712200C38737 /* LaunchScreen.xib */,
@@ -239,6 +242,7 @@
 				BC6EF6CA19ED01A5005ADFDF /* TControlFlow.swift in Sources */,
 				BC6EF6C419ECE70B005ADFDF /* TBasicOperators.swift in Sources */,
 				BCF2D41619E6712200C38737 /* AppDelegate.swift in Sources */,
+				BCFA837419EE3DB3004E31A7 /* TFunctions.swift in Sources */,
 				BC6EF6C019ECC76D005ADFDF /* TExampleProtocol.swift in Sources */,
 				BC6EF6C819ECFCBF005ADFDF /* TCollectionTypes.swift in Sources */,
 				BC6EF6C619ECEEB7005ADFDF /* TStringsRCharacters.swift in Sources */,
