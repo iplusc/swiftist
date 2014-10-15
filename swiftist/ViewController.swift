@@ -10,22 +10,44 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var webView: UIWebView!
-    
+    var webview: UIWebView = UIWebView()
+    var indicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    var maskview: UIView = UIView()
     var targetURL = "http://google.com"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        tryHelloWorld()
-        loadAddressURL()
-        
-        
+        view.backgroundColor = UIColor.whiteColor()
+        self.setUI()
+        self.tryHelloWorld()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setUI() {
+        self.webview.frame = CGRectMake(0,20,self.view.frame.size.width,self.view.frame.size.height-20);
+        self.webview.delegate = self;
+        self.view.addSubview(self.webview)
+        
+        self.maskview.frame = self.view.bounds
+        self.maskview.backgroundColor = UIColor.blackColor()
+        self.maskview.alpha = 0.3
+        self.maskview.hidden = true
+        self.view.addSubview(self.maskview)
+        
+        self.indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        self.indicator.frame = CGRectMake(0, 0, 20, 20)
+        self.indicator.center = self.view.center
+        self.indicator.hidesWhenStopped = true
+        self.view.addSubview(self.indicator)
+        
+        var url: NSURL = NSURL.URLWithString(targetURL)
+        var urlRequest: NSURLRequest = NSURLRequest(URL: url)
+        self.webview.loadRequest(urlRequest)
     }
     
     func tryHelloWorld() {
@@ -469,12 +491,28 @@ class ViewController: UIViewController {
         
     }
     
-    func loadAddressURL() {
-        webView.scalesPageToFit = true;
-        let requestURL = NSURL(string:targetURL)
-        let req = NSURLRequest(URL:requestURL)
-        webView.loadRequest(req)
+}
+
+extension ViewController:UIWebViewDelegate{
+    func webView(webView: UIWebView!, shouldStartLoadWithRequest request: NSURLRequest!, navigationType: UIWebViewNavigationType) -> Bool {
+        println("shouldStartLoadWithRequest url: \(request.URL)")
+        return true
     }
-    
+
+    func webViewDidStartLoad(webView: UIWebView) {
+        self.indicator.startAnimating()
+        self.maskview.hidden = false
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+    }
+
+    func webViewDidFinishLoad(webView: UIWebView) {
+        self.indicator.stopAnimating()
+        self.maskview.hidden = true
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+    }
+
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
+        self.webViewDidFinishLoad(webView)
+    }
 }
 

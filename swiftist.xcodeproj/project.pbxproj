@@ -16,7 +16,6 @@
 		BCF2D41619E6712200C38737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D41519E6712200C38737 /* AppDelegate.swift */; };
 		BCF2D41919E6712200C38737 /* swiftist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D41719E6712200C38737 /* swiftist.xcdatamodeld */; };
 		BCF2D41B19E6712200C38737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D41A19E6712200C38737 /* ViewController.swift */; };
-		BCF2D41E19E6712200C38737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF2D41C19E6712200C38737 /* Main.storyboard */; };
 		BCF2D42019E6712200C38737 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF2D41F19E6712200C38737 /* Images.xcassets */; };
 		BCF2D42319E6712200C38737 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF2D42119E6712200C38737 /* LaunchScreen.xib */; };
 		BCF2D42F19E6712200C38737 /* swiftistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D42E19E6712200C38737 /* swiftistTests.swift */; };
@@ -46,7 +45,6 @@
 		BCF2D41519E6712200C38737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCF2D41819E6712200C38737 /* swiftist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swiftist.xcdatamodel; sourceTree = "<group>"; };
 		BCF2D41A19E6712200C38737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BCF2D41D19E6712200C38737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCF2D41F19E6712200C38737 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BCF2D42219E6712200C38737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BCF2D42819E6712200C38737 /* swiftistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +103,6 @@
 				BC6EF6C919ED01A5005ADFDF /* TControlFlow.swift */,
 				BCFA837319EE3DB3004E31A7 /* TFunctions.swift */,
 				BCFA837519EE42BC004E31A7 /* TClosures.swift */,
-				BCF2D41C19E6712200C38737 /* Main.storyboard */,
 				BCF2D41F19E6712200C38737 /* Images.xcassets */,
 				BCF2D42119E6712200C38737 /* LaunchScreen.xib */,
 				BCF2D41719E6712200C38737 /* swiftist.xcdatamodeld */,
@@ -219,7 +216,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF2D41E19E6712200C38737 /* Main.storyboard in Resources */,
 				BCF2D42319E6712200C38737 /* LaunchScreen.xib in Resources */,
 				BCF2D42019E6712200C38737 /* Images.xcassets in Resources */,
 			);
@@ -272,14 +268,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BCF2D41C19E6712200C38737 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCF2D41D19E6712200C38737 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BCF2D42119E6712200C38737 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
