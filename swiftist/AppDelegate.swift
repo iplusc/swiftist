@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let window = window {
             window.backgroundColor = UIColor.whiteColor()
             window.makeKeyAndVisible()
-            window.rootViewController = ViewController()
+            window.rootViewController = TopViewController()
         }
         
         return true

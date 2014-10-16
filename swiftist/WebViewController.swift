@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WebViewController: UIViewController {
     
     var webview: UIWebView = UIWebView()
     var indicator: UIActivityIndicatorView = UIActivityIndicatorView()
@@ -493,7 +493,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController:UIWebViewDelegate{
+extension WebViewController:UIWebViewDelegate{
     func webView(webView: UIWebView!, shouldStartLoadWithRequest request: NSURLRequest!, navigationType: UIWebViewNavigationType) -> Bool {
         println("shouldStartLoadWithRequest url: \(request.URL)")
         return true

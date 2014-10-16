@@ -15,12 +15,13 @@
 		BC6EF6CA19ED01A5005ADFDF /* TControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EF6C919ED01A5005ADFDF /* TControlFlow.swift */; };
 		BCF2D41619E6712200C38737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D41519E6712200C38737 /* AppDelegate.swift */; };
 		BCF2D41919E6712200C38737 /* swiftist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D41719E6712200C38737 /* swiftist.xcdatamodeld */; };
-		BCF2D41B19E6712200C38737 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D41A19E6712200C38737 /* ViewController.swift */; };
+		BCF2D41B19E6712200C38737 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D41A19E6712200C38737 /* WebViewController.swift */; };
 		BCF2D42019E6712200C38737 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF2D41F19E6712200C38737 /* Images.xcassets */; };
 		BCF2D42319E6712200C38737 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF2D42119E6712200C38737 /* LaunchScreen.xib */; };
 		BCF2D42F19E6712200C38737 /* swiftistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2D42E19E6712200C38737 /* swiftistTests.swift */; };
 		BCFA837419EE3DB3004E31A7 /* TFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFA837319EE3DB3004E31A7 /* TFunctions.swift */; };
 		BCFA837619EE42BC004E31A7 /* TClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFA837519EE42BC004E31A7 /* TClosures.swift */; };
+		BCFA837819EE636D004E31A7 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFA837719EE636D004E31A7 /* TopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,7 @@
 		BCF2D41419E6712200C38737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCF2D41519E6712200C38737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCF2D41819E6712200C38737 /* swiftist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swiftist.xcdatamodel; sourceTree = "<group>"; };
-		BCF2D41A19E6712200C38737 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCF2D41A19E6712200C38737 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BCF2D41F19E6712200C38737 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BCF2D42219E6712200C38737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BCF2D42819E6712200C38737 /* swiftistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +53,7 @@
 		BCF2D42E19E6712200C38737 /* swiftistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftistTests.swift; sourceTree = "<group>"; };
 		BCFA837319EE3DB3004E31A7 /* TFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFunctions.swift; sourceTree = "<group>"; };
 		BCFA837519EE42BC004E31A7 /* TClosures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TClosures.swift; sourceTree = "<group>"; };
+		BCFA837719EE636D004E31A7 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,16 +95,10 @@
 		BCF2D41219E6712200C38737 /* swiftist */ = {
 			isa = PBXGroup;
 			children = (
+				BCFA837B19EE66E7004E31A7 /* Guide */,
+				BCFA837A19EE66CC004E31A7 /* ViewControllers */,
+				BCFA837C19EE68AA004E31A7 /* ViewParts */,
 				BCF2D41519E6712200C38737 /* AppDelegate.swift */,
-				BCF2D41A19E6712200C38737 /* ViewController.swift */,
-				BC6EF6BF19ECC76D005ADFDF /* TExampleProtocol.swift */,
-				BC6EF6C119ECD0C5005ADFDF /* TTheBasics.swift */,
-				BC6EF6C319ECE70B005ADFDF /* TBasicOperators.swift */,
-				BC6EF6C519ECEEB7005ADFDF /* TStringsRCharacters.swift */,
-				BC6EF6C719ECFCBF005ADFDF /* TCollectionTypes.swift */,
-				BC6EF6C919ED01A5005ADFDF /* TControlFlow.swift */,
-				BCFA837319EE3DB3004E31A7 /* TFunctions.swift */,
-				BCFA837519EE42BC004E31A7 /* TClosures.swift */,
 				BCF2D41F19E6712200C38737 /* Images.xcassets */,
 				BCF2D42119E6712200C38737 /* LaunchScreen.xib */,
 				BCF2D41719E6712200C38737 /* swiftist.xcdatamodeld */,
@@ -134,6 +130,37 @@
 				BCF2D42D19E6712200C38737 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCFA837A19EE66CC004E31A7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCFA837719EE636D004E31A7 /* TopViewController.swift */,
+				BCF2D41A19E6712200C38737 /* WebViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BCFA837B19EE66E7004E31A7 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EF6BF19ECC76D005ADFDF /* TExampleProtocol.swift */,
+				BC6EF6C119ECD0C5005ADFDF /* TTheBasics.swift */,
+				BC6EF6C319ECE70B005ADFDF /* TBasicOperators.swift */,
+				BC6EF6C519ECEEB7005ADFDF /* TStringsRCharacters.swift */,
+				BC6EF6C719ECFCBF005ADFDF /* TCollectionTypes.swift */,
+				BC6EF6C919ED01A5005ADFDF /* TControlFlow.swift */,
+				BCFA837319EE3DB3004E31A7 /* TFunctions.swift */,
+				BCFA837519EE42BC004E31A7 /* TClosures.swift */,
+			);
+			name = Guide;
+			sourceTree = "<group>";
+		};
+		BCFA837C19EE68AA004E31A7 /* ViewParts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewParts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF2D41B19E6712200C38737 /* ViewController.swift in Sources */,
+				BCFA837819EE636D004E31A7 /* TopViewController.swift in Sources */,
+				BCF2D41B19E6712200C38737 /* WebViewController.swift in Sources */,
 				BC6EF6C219ECD0C5005ADFDF /* TTheBasics.swift in Sources */,
 				BCF2D41919E6712200C38737 /* swiftist.xcdatamodeld in Sources */,
 				BCFA837619EE42BC004E31A7 /* TClosures.swift in Sources */,
