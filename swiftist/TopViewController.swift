@@ -14,7 +14,7 @@ class TopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var webViewBtn = UIButton(frame: CGRectMake(160, 30, 100, 50))
+        var webViewBtn = UIButton(frame: CGRectMake(self.view.frame.width/2-50, 30, 100, 50))
         webViewBtn.setTitle("WebView", forState: .Normal)
         webViewBtn.setTitleColor(UIColor.blueColor(), forState: .Normal)
         
