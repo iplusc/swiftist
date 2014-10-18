@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2816457319F1E411009C251C /* TEnumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816457219F1E411009C251C /* TEnumerations.swift */; };
 		BC6EF6C019ECC76D005ADFDF /* TExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EF6BF19ECC76D005ADFDF /* TExampleProtocol.swift */; };
 		BC6EF6C219ECD0C5005ADFDF /* TTheBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EF6C119ECD0C5005ADFDF /* TTheBasics.swift */; };
 		BC6EF6C419ECE70B005ADFDF /* TBasicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EF6C319ECE70B005ADFDF /* TBasicOperators.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2816457219F1E411009C251C /* TEnumerations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEnumerations.swift; sourceTree = "<group>"; };
 		BC6EF6BF19ECC76D005ADFDF /* TExampleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TExampleProtocol.swift; sourceTree = "<group>"; };
 		BC6EF6C119ECD0C5005ADFDF /* TTheBasics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTheBasics.swift; sourceTree = "<group>"; };
 		BC6EF6C319ECE70B005ADFDF /* TBasicOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBasicOperators.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				BC6EF6C919ED01A5005ADFDF /* TControlFlow.swift */,
 				BCFA837319EE3DB3004E31A7 /* TFunctions.swift */,
 				BCFA837519EE42BC004E31A7 /* TClosures.swift */,
+				2816457219F1E411009C251C /* TEnumerations.swift */,
 			);
 			name = Guide;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				BCFA837619EE42BC004E31A7 /* TClosures.swift in Sources */,
 				BC6EF6CA19ED01A5005ADFDF /* TControlFlow.swift in Sources */,
 				BC6EF6C419ECE70B005ADFDF /* TBasicOperators.swift in Sources */,
+				2816457319F1E411009C251C /* TEnumerations.swift in Sources */,
 				BCF2D41619E6712200C38737 /* AppDelegate.swift in Sources */,
 				BCFA837419EE3DB3004E31A7 /* TFunctions.swift in Sources */,
 				BC6EF6C019ECC76D005ADFDF /* TExampleProtocol.swift in Sources */,

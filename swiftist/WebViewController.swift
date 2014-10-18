@@ -75,6 +75,8 @@ class WebViewController: UIViewController {
         doFounctions()
         // 2.7 Closures
         doClosures()
+        // 2.8 Enumerations
+        doEnumerations()
     }
     
     func trySampleValues() {
