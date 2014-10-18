@@ -8,19 +8,30 @@
 
 import Foundation
 
+enum CompassPoint {
+    case North
+    case South
+    case East
+    case West
+}
+
+enum Planet {
+    case Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
+}
+var directionToHead = CompassPoint.West
+let somePlanet = Planet.Earth
+
+enum Barcode {
+    case UPCA(Int, Int, Int)
+    case QRCode(String)
+}
+
+var productBarcode = Barcode.UPCA(8, 85909_51226, 3)
+
+
 func doEnumerations() {
-    enum CompassPoint {
-        case North
-        case South
-        case East
-        case West
-    }
     
-    enum Planet {
-        case Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
-    }
     
-    var directionToHead = CompassPoint.West
     directionToHead = .East
     
     directionToHead = .South
@@ -36,7 +47,7 @@ func doEnumerations() {
     }
     // 输出 "Watch out for penguins”
     
-    let somePlanet = Planet.Earth
+    
     switch somePlanet {
     case .Earth:
         println("Mostly harmless")
@@ -45,13 +56,7 @@ func doEnumerations() {
     }
     // 输出 "Mostly harmless”
     
-    enum Barcode {
-        case UPCA(Int, Int, Int)
-        case QRCode(String)
-    }
-    
-    var productBarcode = Barcode.UPCA(8, 85909_51226, 3)
-    productBarcode = .QRCode("ABCDEFGHIJKLMNOP")
+        productBarcode = .QRCode("ABCDEFGHIJKLMNOP")
     
     switch productBarcode {
     case .UPCA(let numberSystem, let identifier, let check):

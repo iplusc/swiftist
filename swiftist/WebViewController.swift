@@ -366,6 +366,12 @@ class WebViewController: UIViewController {
         println("optionalSquare?.sideLength: + \(sideLength)")
     }
     
+    enum ServerResponse {
+        case Result(String, String)
+        case Error(String)
+    }
+    let success = ServerResponse.Result("6:00 am", "8:09 pm")
+    let failure = ServerResponse.Error("Out of cheese.")
     func tryEnumerationsRStructures() {
         enum Rank: Int {
             case Ace = 1
@@ -434,8 +440,7 @@ class WebViewController: UIViewController {
             case Error(String)
         }
         
-        let success = ServerResponse.Result("6:00 am", "8:09 pm")
-        let failure = ServerResponse.Error("Out of cheese.")
+        
         println("success: \(success)")
         println("failure: \(failure)")
         
